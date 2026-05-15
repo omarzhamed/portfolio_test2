@@ -21,7 +21,7 @@ window.PORTFOLIO = {
   },
 
   cv: {
-    path: "assets/cv.pdf",
+    path: "cv.pdf",
     label: "Download CV",
   },
 
