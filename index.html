@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Personal portfolio website" />
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+    <meta property="og:title" content="Portfolio" />
+    <meta property="og:description" content="Personal portfolio website" />
+    <meta property="og:type" content="website" />
+  </head>
+
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="header" id="top">
+      <div class="container header__inner">
+        <a class="brand" href="#top" aria-label="Go to top">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__text" id="brandName">Your Name</span>
+        </a>
+
+        <nav class="nav" aria-label="Primary">
+          <a class="nav__link" href="#about">About</a>
+          <a class="nav__link" href="#projects">Projects</a>
+          <a class="nav__link" href="#skills">Skills</a>
+          <a class="nav__link" href="#experience">Activities</a>
+          <a class="nav__link" href="#contact">Contact</a>
+        </nav>
+
+        <div class="header__cta">
+          <a class="btn btn--ghost" id="cvBtnTop" href="assets/cv.pdf" download>Download CV</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="about">
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <p class="eyebrow" id="heroEyebrow">Fourth-Year Computer Science Student</p>
+            <h1 class="hero__title" id="heroTitle">I build reliable software and thoughtful interfaces.</h1>
+            <p class="hero__summary" id="heroSummary">
+              A short, honest intro about who you are, what you do, and what you’re currently interested in.
+            </p>
+
+            <div class="hero__meta" id="heroMeta"></div>
+
+            <div class="hero__actions">
+              <a class="btn" href="#projects">View Projects</a>
+              <a class="btn btn--ghost" id="cvBtnHero" href="assets/cv.pdf" download>Download CV</a>
+            </div>
+          </div>
+
+          <div class="hero__card" aria-label="Profile card">
+            <div class="profile">
+              <div class="profile__avatar" aria-hidden="true">
+                <span class="profile__initials" id="profileInitials">YN</span>
+              </div>
+              <div class="profile__info">
+                <div class="profile__name" id="profileName">Your Name</div>
+                <div class="profile__role" id="profileRole">Software Developer • Student</div>
+                <div class="profile__location" id="profileLocation">City, Country</div>
+              </div>
+              <div class="profile__links" id="profileLinks"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projectsTitle">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title" id="projectsTitle">Projects</h2>
+            <p class="section__subtitle">Four projects that show range, depth, and what you care about.</p>
+          </div>
+
+          <div class="grid" id="projectsGrid" role="list"></div>
+        </div>
+      </section>
+
+      <section class="section" id="skills" aria-labelledby="skillsTitle">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title" id="skillsTitle">Skills</h2>
+            <p class="section__subtitle">Only list what you can comfortably discuss in an interview.</p>
+          </div>
+
+          <div class="skills" id="skillsGrid"></div>
+        </div>
+      </section>
+
+      <section class="section" id="experience" aria-labelledby="expTitle">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title" id="expTitle">Student Activities & Experience</h2>
+            <p class="section__subtitle">
+              Clubs, volunteering, leadership, competitions — evidence you take initiative.
+            </p>
+          </div>
+
+          <div class="timeline" id="activitiesTimeline"></div>
+        </div>
+      </section>
+
+      <section class="section" id="contact" aria-labelledby="contactTitle">
+        <div class="container">
+          <div class="section__head">
+            <h2 class="section__title" id="contactTitle">Contact</h2>
+            <p class="section__subtitle">If someone wants to reach you in 5 seconds, they can.</p>
+          </div>
+
+          <div class="contact">
+            <div class="contact__card">
+              <div class="contact__row">
+                <div class="contact__label">Email</div>
+                <a class="contact__value" id="contactEmail" href="mailto:you@example.com">you@example.com</a>
+              </div>
+              <div class="contact__row">
+                <div class="contact__label">Links</div>
+                <div class="contact__links" id="contactLinks"></div>
+              </div>
+            </div>
+
+            <div class="contact__cta">
+              <a class="btn" id="contactPrimary" href="mailto:you@example.com">Email Me</a>
+              <a class="btn btn--ghost" id="cvBtnBottom" href="assets/cv.pdf" download>Download CV</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container footer__inner">
+          <div class="footer__left">
+            <span id="footerName">Your Name</span>
+            <span class="footer__sep" aria-hidden="true">•</span>
+            <span id="footerYear"></span>
+          </div>
+          <a class="footer__top" href="#top">Back to top</a>
+        </div>
+      </footer>
+    </main>
+
+    <script src="content.js"></script>
+    <script src="script.js" defer></script>
+  </body>
+</html>
